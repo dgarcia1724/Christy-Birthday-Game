@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#222] text-white">
+    <header class="p-10 flex justify-between">
+      <a
+        class="again inline-block py-4 px-6 text-3xl font-bold bg-white text-black hover:bg-[rgb(200,200,200)]"
+        href="#"
+        >Again!</a
+      >
+      <p class="text-2xl font-semibold">(Between 1 and 20)</p>
+    </header>
+    <main>
+      <h1 class="happy mb-10 text-6xl text-center font-bold">
+        Guess My Number!
+      </h1>
+      <div class="box mb-20 grid place-items-center mx-auto w-32 h-32 bg-white">
+        <p class="number text-8xl font-bold text-black">?</p>
+      </div>
+      <section class="mx-20 flex justify-between">
+        <section class="left flex flex-col items-center">
+          <input
+            class="guess text-center mb-10 w-56 h-24 bg-[#222] border-white border-4 text-5xl"
+            type="text"
+          />
+          <div>
+            <a
+              class="check inline-block py-4 px-6 text-3xl font-bold bg-white text-black hover:bg-[rgb(200,200,200)]"
+              href="#"
+              >Check!</a
+            >
+          </div>
+        </section>
+        <section class="right">
+          <p class="message mb-20 text-3xl">Start guessing...</p>
+          <p class="mb-2 text-3xl">💯 Score: <span class="score">20</span></p>
+          <p class="text-3xl">🥇 Highscore: <span class="highscore">0</span></p>
+        </section>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
